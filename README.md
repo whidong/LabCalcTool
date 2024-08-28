@@ -14,6 +14,7 @@
 2. **필수 라이브러리 설치**: 다음 명령어로 필요한 라이브러리를 설치하세요.
    ```bash
    pip install tkinter
+   pip install pyinstaller
     ```
 
 ## PyInstaller로 실행 파일 만들기
@@ -51,4 +52,50 @@ pyinstaller --icon=파일명.ico scriptname.py
 pyinstaller --add-data "data.txt;." scriptname.py
  ```
 
+- --clean: 빌드 폴더와 캐시를 지우고 빌드합니다.
+- --upx-dir <UPX_DIR>: UPX 압축기를 사용해 실행 파일을 더 작게 만듭니다.
+- --specpath <DIR>: .spec 파일의 경로를 지정합니다.
+
+ ```bash
+pyinstaller --specpath=build scriptname.py
+ ```
+
+- --distpath <DIR>: 최종 실행 파일이 생성될 경로를 지정합니다.
+
+ ```bash
+pyinstaller --distpath=output scriptname.py
+ ```
+
 </details>
+
+1. 프로그램 다운로드: 이 레포지토리를 클론하거나 ZIP 파일로 다운로드하세요.
+ ```bash
+git clone https://github.com/whidong/LabCalcTool.git
+ ```
+2. 터미널 또는 명령 프롬프트에서 프로그램이 있는 디렉토리로 이동하세요.
+ ```bash
+cd .../LabCalcTool
+ ```
+3. 이미지파일 및 icon 파일을 포함해서 실행파일로 만듭니다.
+ ```bash
+pyinstaller --icon=NH4.ico -F -w --add-data "NH4_formula.png;." NH4계산프로그램_v0.2.py
+ ```
+
+
+## 사용 방법
+
+1. 프로그램을 실행하면 여러 시료의 적정량을 입력할 수 있는 창이 나타납니다.
+2. 각 시료의 적정량을 입력한 후 "계산하기" 버튼을 눌러 결과를 확인하세요.
+3. 잘못된 데이터를 입력했거나 다시 시작하려면 "다시하기" 버튼을 클릭하세요.
+
+## 파일 구조
+- NH4계산프로그램_v0.2.py: 메인 프로그램 파일
+- NH4_formula.png: 프로그램에서 NH4 계산식을 보여주기 위한 이미지 파일
+
+
+
+
+
+
+
+
