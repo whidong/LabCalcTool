@@ -2,6 +2,8 @@
 
 이 프로그램은 실험실에서 NH4 농도를 계산하기 위한 도구입니다. 여러 시료의 적정량을 입력하면, 자동으로 NH4 농도를 계산해줍니다.
 
+![NH4실행화면](https://github.com/user-attachments/assets/b349ed3c-5c61-4482-b04a-4fbdc77a6ece)
+
 ## 기능
 
 - 여러 시료의 적정량 입력을 통한 NH4 농도 계산
@@ -89,8 +91,8 @@ pyinstaller --icon=NH4.ico -F -w --add-data "NH4_formula.png;." NH4계산프로�
 3. 잘못된 데이터를 입력했거나 다시 시작하려면 "다시하기" 버튼을 클릭하세요.
 
 ## 파일 구조
-- NH4계산프로그램_v0.2.py: 메인 프로그램 파일
-- NH4_formula.png: 프로그램에서 NH4 계산식을 보여주기 위한 이미지 파일
+- NH4계산프로그램_v0.2.py : 메인 프로그램 파일
+- NH4_formula.png : 프로그램에서 NH4 계산식을 보여주기 위한 이미지 파일
 
 
 
