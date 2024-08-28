@@ -28,7 +28,7 @@
 <details>
   <summary>PyInstaller 명령어 및 옵션</summary>
 
-  PyInstaller는 Python 스크립트를 독립 실행형 실행 파일로 패키징합니다.
+  PyInstaller는 Python 스크립트를 배포에 용이한 독립 실행형 실행 파일로 패키징합니다.
 
   ```bash
   pyinstaller [OPTIONS] scriptname.py
