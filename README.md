@@ -31,7 +31,7 @@
  ```
   - -F, --onefile : 하나의 독립 실행 파일로 패키징 합니다.
   - -D, --onedir : 기본 옵션, 여러 파일로 분리하여 저장합니다.
-  - -W, --windowed/ --noconsole : 콘솔 창을 숨깁니다.
+  - -w, --windowed/ --noconsole : 콘솔 창을 숨깁니다.
     
    ```bash
 pyinstaller -F scriptname.py
